@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 
 @mixin spartan($font-weight: 400) {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: $font-weight !important;
+}
+
+@function pixelToRem($pixels) {
+  $result: calc($pixels / 16) * 1rem;
+  @return $result;
 }
 
 .spartan-light {
@@ -16,4 +21,80 @@
 
 .spartan-bold {
   @include spartan(700);
+}
+
+.hero-title {
+  @extend .spartan-light;
+  font-size: pixelToRem(32);
+  line-height: pixelToRem(40);
+  letter-spacing: pixelToRem(-0.4);
+
+  @media (min-width: 768px) {
+    font-size: pixelToRem(48);
+    line-height: pixelToRem(64);
+    letter-spacing: pixelToRem(-0.6);
+  }
+
+  @media (min-width: 1100px) {
+    font-size: pixelToRem(80);
+    line-height: pixelToRem(80);
+    letter-spacing: pixelToRem(-1);
+  }
+}
+
+.main-title {
+  @extend .spartan-bold;
+  font-size: pixelToRem(32);
+  line-height: pixelToRem(40);
+  letter-spacing: pixelToRem(-0.4);
+
+  @media (min-width: 768px) {
+    font-size: pixelToRem(48);
+    line-height: pixelToRem(48);
+    letter-spacing: pixelToRem(-0.5);
+  }
+}
+
+.highlights-title {
+  @extend .spartan-bold;
+  font-size: pixelToRem(20);
+  line-height: pixelToRem(24);
+  letter-spacing: pixelToRem(-0.25);
+}
+
+.highlights-paragraph {
+  font-size: pixelToRem(16);
+  line-height: pixelToRem(26);
+}
+
+.paragraph {
+  font-size: pixelToRem(16);
+  line-height: pixelToRem(26);
+
+  @media (min-width: 768px) {
+    font-size: pixelToRem(20);
+    line-height: pixelToRem(30);
+  }
+}
+
+.events {
+  @extend .spartan-semibold;
+  font-size: pixelToRem(17);
+  line-height: pixelToRem(28);
+  letter-spacing: pixelToRem(2.5);
+}
+
+.footer {
+  text-transform: uppercase;
+  font-size: pixelToRem(14);
+  line-height: pixelToRem(28);
+  letter-spacing: pixelToRem(2);
+}
+
+.button {
+  @extend .spartan-semibold;
+  text-transform: uppercase;
+  font-size: pixelToRem(17);
+  line-height: pixelToRem(16);
+  letter-spacing: pixelToRem(2.5);
 }
