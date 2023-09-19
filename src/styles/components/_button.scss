@@ -1,0 +1,11 @@
+.button {
+  padding: 1.5rem 3.375rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &-black {
+    background-color: $black;
+    border: none;
+  }
+}
