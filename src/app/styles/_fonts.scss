@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+
+@mixin spartan($font-weight: 400) {
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: $font-weight !important;
+}
+
+.spartan-light {
+  @include spartan(300);
+}
+
+.spartan-semibold {
+  @include spartan(600);
+}
+
+.spartan-bold {
+  @include spartan(700);
+}
