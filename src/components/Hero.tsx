@@ -6,11 +6,11 @@ function Hero() {
       <picture>
         <source
           media="(min-width: 1100px)"
-          srcSet="homepage/hero-bg-desktop.jpg"
+          srcSet="homepage/hero-bg-desktop@2x.jpg"
         />
         <source
           media="(min-width: 768px)"
-          srcSet="homepage/hero-bg-tablet@2x.jpg"
+          srcSet="homepage/hero-bg-tablet.jpg"
         />
         <img src="homepage/hero-bg-mobile@2x.jpg" alt="" />
       </picture>
