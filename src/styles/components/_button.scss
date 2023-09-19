@@ -3,6 +3,13 @@
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: white;
+    color: $black;
+    transition-duration: 200ms;
+  }
 
   &-black {
     background-color: $black;
