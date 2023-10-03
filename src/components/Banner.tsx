@@ -7,7 +7,7 @@ function Banner() {
           srcSet="homepage/ready-bg-desktop@2x.jpg"
         />
         <source
-          media="(min-width: 768px)"
+          media="(min-width: 500px)"
           srcSet="homepage/ready-bg-tablet@2x.jpg"
         />
         <img src="homepage/ready-bg-mobile@2x.jpg" alt="" />
