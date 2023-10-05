@@ -1,0 +1,20 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  h2, p {
+    text-align: center;
+  }
+
+  &-white {
+    color: white;
+  }
+}

@@ -29,7 +29,7 @@
   line-height: pixelToRem(40);
   letter-spacing: pixelToRem(-0.4);
 
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
     font-size: pixelToRem(48);
     line-height: pixelToRem(64);
     letter-spacing: pixelToRem(-0.6);
@@ -48,7 +48,7 @@
   line-height: pixelToRem(40);
   letter-spacing: pixelToRem(-0.4);
 
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
     font-size: pixelToRem(48);
     line-height: pixelToRem(48);
     letter-spacing: pixelToRem(-0.5);
@@ -71,7 +71,7 @@
   font-size: pixelToRem(16);
   line-height: pixelToRem(26);
 
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
     font-size: pixelToRem(20);
     line-height: pixelToRem(30);
   }
